@@ -1,47 +1,75 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Client-Side Drawing Demo</title>
-</head>
-<body>
-    <canvas id="myCanvas"></canvas>
-    <button onclick="saveDrawing()">Save Drawing (Simulated)</button>
-    <script src="canvas.js"></script>
-</body>
-</html> -->
-<!-- Module 1 end  -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Client-Side Drawing Demo</title>
+    <title>Creative HTML Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <div class="toolbox">
-        <button onclick="selectTool('pen')">Pen</button>
-        <button onclick="selectTool('rectangle')">Rectangle</button>
-        <button onclick="selectTool('circle')">Circle</button>
 
-        <label for="colorPicker">Color:</label>
-        <input type="color" id="colorPicker" onchange="setColor(this.value)">
+    <header>
+        <h1>Creative HTML Page</h1>
+        <p>Welcome to our creative and beautiful webpage!</p>
+    </header>
 
-        <label for="brushSize">Brush Size:</label>
-        <input type="range" id="brushSize" min="1" max="20" onchange="setBrushSize(this.value)">
+    <main>
+        <h2>Main Content Section</h2>
+        <p>This is where your main content goes. You can add text, images, videos, and more!</p>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+    </main>
 
-        <button onclick="undo()">Undo</button>
-        <button onclick="redo()">Redo</button>
-        <button onclick="clearCanvas()">Clear Canvas</button>
-    </div>
-    
-    <canvas id="myCanvas"></canvas>
-    <script src="canvas.js"></script>
+    <footer>
+        &copy; 2023 Creative Page. All rights reserved.
+    </footer>
+
+    <script>
+        function changeBackgroundColor() {
+            const body = document.body;
+            body.style.backgroundColor = getRandomColor();
+        }
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+
 </body>
 </html>
-
-<!-- Module 2 end -->
