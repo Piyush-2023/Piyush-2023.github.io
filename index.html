@@ -1,1 +1,47 @@
-What's up Sunshine
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Client-Side Drawing Demo</title>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+    <button onclick="saveDrawing()">Save Drawing (Simulated)</button>
+    <script src="canvas.js"></script>
+</body>
+</html> -->
+<!-- Module 1 end  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Client-Side Drawing Demo</title>
+</head>
+<body>
+    <div class="toolbox">
+        <button onclick="selectTool('pen')">Pen</button>
+        <button onclick="selectTool('rectangle')">Rectangle</button>
+        <button onclick="selectTool('circle')">Circle</button>
+
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" onchange="setColor(this.value)">
+
+        <label for="brushSize">Brush Size:</label>
+        <input type="range" id="brushSize" min="1" max="20" onchange="setBrushSize(this.value)">
+
+        <button onclick="undo()">Undo</button>
+        <button onclick="redo()">Redo</button>
+        <button onclick="clearCanvas()">Clear Canvas</button>
+    </div>
+    
+    <canvas id="myCanvas"></canvas>
+    <script src="canvas.js"></script>
+</body>
+</html>
+
+<!-- Module 2 end -->
