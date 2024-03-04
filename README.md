@@ -5,9 +5,9 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Piyush-2023" alt="Piyush-2023" /></a> </p>
 
-- 🌱 I’m currently learning **MERN**
+- 🌱 I’m currently learning **MERN** & **MEAN** Technology.
 
-- 💬 Ask me about **Frontend development**
+- 💬 Ask me about **Frontend development** 
 
 - 📫 How to reach me **piyushrele2022@gmail.com**
 
