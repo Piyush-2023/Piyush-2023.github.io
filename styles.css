@@ -30,7 +30,7 @@ body {
 }
 
 .hero-section {
-    background-image: url('hero-section.jpg'); /* Replace with your image path */
+    background-image: url('img/hero-section.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 80vh;
